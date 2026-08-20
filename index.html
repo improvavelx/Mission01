@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Cadastro De Usuario Sla.Alguem.RealmenteLêIsso?</title>
+
+    <style>
+        body{
+            font-family: Arial, sans-serif;
+            background-color: #f2f2f2;
+            text-align: center;
+        }
+        h1{
+            color: blue;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Cadastro de Usuário</h1>
+    <p class="info">Preencha as informações abaixo para realizar seu cadastro.</p>
+    <form>
+        <h2>Dados Pessoais</h2>
+        <br>
+        <label>Nome:</label>
+        <input type="text" name="nome" required><br>
+        <br>
+        <label>Email:</label>
+        <input type="email" required><br>
+        <br>
+        <label>Senha:</label>
+        <input type="password" name="senha" required><br>
+
+        <h2>Informações Adicionais</h2>
+        <label>Data de Nascimento</label>
+        <input type="date" name="data"><br>
+        <br>
+        <label>Curso:</label>
+        <select name="curso">
+            <option value="">Selecione um curso</option>
+            <option value="Computacao">Computação</option>
+            <option value="Engenharia">Engenharia</option>
+            <option value="Medicina">Medicina</option>
+        </select>
+        <p>
+            <input type="checkbox" name="termos" required> Aceito os termos e condições<br>
+        </p>
+        <button type="submit">Cadastrar</button>
+    </form>
+</body>
+
+</html>
